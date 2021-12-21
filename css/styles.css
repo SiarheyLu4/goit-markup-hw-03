@@ -16,6 +16,25 @@ body {
   background-color: var(--fifth-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -24,7 +43,33 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid rgb(248, 6, 6);
+}
+
 /* ----------------Header--------------------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .header-logo {
   font-family: Raleway;
@@ -33,6 +78,7 @@ body {
   line-height: 1.19;
   color: var(--first-color);
 }
+
 .header-logo-studio {
   color: var(--second-color);
 }
@@ -56,6 +102,7 @@ body {
 .header-contact:focus {
   color: var(--first-color);
 }
+
 .current {
   color: var(--first-color);
 }
@@ -63,6 +110,8 @@ body {
 /* ----------------Main part HTML------------------------------ */
 /* ------------------main block------------------------ */
 .block {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--seventh-color);
 }
 .block-title {
@@ -73,6 +122,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--fifth-color);
+  margin-bottom: 30px;
 }
 
 .block-btn {
@@ -94,9 +144,7 @@ body {
   background-color: var(--eighth-color);
 }
 /* -------------organizational qualities---------------- */
-.qualities-title {
-  visibility: hidden;
-}
+
 .qualities-item-title {
   font-size: 14px;
   line-height: 1.14;
@@ -168,9 +216,6 @@ body {
 
 /* ----------------Main part portfolio------------------------------ */
 
-.portfolio-title {
-  visibility: hidden;
-}
 .btn-portfolio {
   font-family: inherit;
   font-style: normal;
