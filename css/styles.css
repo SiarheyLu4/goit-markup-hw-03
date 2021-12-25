@@ -184,7 +184,7 @@ img {
   min-height: 50px;
   box-shadow: 0px 4px 4px var(--eleventh-color);
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
 }
 .block-btn:hover,
 .block-btn:focus {
@@ -341,6 +341,7 @@ img {
 .btn-list-portfolio {
   display: flex;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .btn-item-portfolio:not(:last-child) {
